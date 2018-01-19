@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			FlightClub
+		</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+		<link rel="shortcut icon" type="image/x-icon" href="https://www.flightclub.co.za/favicon.ico"/>
+		
+		<!-- primary library css -->
+		<link href="https://www.flightclub.co.za/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://www.flightclub.co.za/plugins/jquery-ui-1.11.4.custom/jquery-ui.min.css" rel="stylesheet">
+		<link href="https://www.flightclub.co.za/plugins/fontawesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- plugin css -->
+				
+		<!-- Helper rendered css links -->
+		<link href='https://www.flightclub.co.za/plugins/bootstrap-select/css/bootstrap-select.css' rel='stylesheet'>
+
+		<!-- custom css - NOTE: Overrides all other css-->
+		<link href="https://www.flightclub.co.za/css/app.css" rel="stylesheet">
+
+		<!-- primary javascript that needs to load with page -->
+		<script type="text/javascript" src="https://www.flightclub.co.za/plugins/jquery/jquery-1.11.2.min.js"></script>
+
+		<!-- Flightclubhelp Zendesk Widget script -->
+		<script>
+		/*<![CDATA[*/
+
+		// window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");
+		// window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",
+		// r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),
+		// d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){
+		// 	n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}
+		// o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",
+		// o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},
+		// o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","flightclubhelp.zendesk.com");/*]]>*/
+		//
+
+		</script>
+					<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73551938-1', 'auto');
+  ga('send', 'pageview');
+</script>
+		
+				
+
+	</head>
+	<body>
+									<!--		<div class="page-content"></div>-->
+		<div class='header container-fluid'>
+	<div class="row">
+		<div class='col-xs-6 col-sm-5 col-md-3 col-lg-3 logos fc-logo'>
+			<a href='https://www.flightclub.co.za'>
+			   <img src='https://www.flightclub.co.za/img/header/logo-2017.png' class="header-logo logos"/>
+			</a>
+		</div>
+		<div class='col-xs-6 col-sm-12 col-md-2 col-lg-1 hidden-xs hidden-sm'>
+			<img src='https://www.flightclub.co.za/img/header/Powered-By-Rosebank-Travel-Small.png' class="header-logo logos"/>
+		</div>
+		<div class='col-xs-6 col-sm-7 col-md-7 col-lg-8 header-buttons'>
+			<div class='pull-left hidden-xs'>
+				<ul class='header-menu'>
+					<li class="hidden-xs">
+						<a href='https://www.flightclub.co.za/fly' class="btn btn-composite btn-vcenter btn-flightclub btn-header btn-header-fly fly">
+							&nbsp;<span>Fly</span>
+						</a>
+					</li>
+					<li>
+						<a href='https://www.flightclub.co.za/sleep' class="btn btn-composite btn-vcenter btn-flightclub btn-header btn-header-sleep sleep">
+							&nbsp;<span>Sleep</span>
+						</a>
+					</li>				
+					<li>
+						<a href='https://www.flightclub.co.za/drive' class="btn btn-composite btn-vcenter btn-flightclub btn-header btn-header-drive drive">
+							&nbsp;<span>Drive</span>
+						</a>
+					</li>
+					<li>
+						<a href='https://www.flightclub.co.za/insure' class="btn btn-composite btn-vcenter btn-flightclub btn-header btn-header-insure insure">
+							&nbsp;<span>Insure</span>
+						</a>
+					</li>
+										<li class='menu-specials-li'>
+						<a href='https://www.flightclub.co.za#packages' class="btn btn-composite btn-vcenter btn-flightclub btn-header btn-header-specials specials">
+							&nbsp;<span>Packages</span>
+						</a>
+					</li>
+									</ul>
+			</div>
+   <div class='pull-right'>
+    <ul class="header-menu">
+					
+					<li class="hidden-xs hidden-sm">
+						<a href="https://www.flightclub.co.za/checkin" class="btn btn-header btn-vcenter btn-flightclub checkin">
+							<span>Check In</span>
+						</a>
+					</li>
+					<li class="hidden-xs hidden-sm">
+						<a href="https://www.flightclub.co.za/booking/mybooking" class="btn btn-header btn-vcenter btn-flightclub yourbooking">
+							<span>Your Booking</span>
+						</a>
+					</li>
+					<li class="hidden-xs">
+						<a href="https://www.flightclub.co.za/help" class="btn btn-header btn-vcenter btn-primary help">
+							<span>Help</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class='row hidden-sm hidden-md hidden-lg'>
+		<div class='col-xs-5 hidden-lg hidden-md'>
+			<img src='https://www.flightclub.co.za/img/header/Powered-By-Rosebank-Travel-Small.png' class="header-logo"/>
+		</div>
+		<li class="hidden-md hidden-lg">
+			<div class='pull-right'>
+				<a href='#' data-fc-menu='toggle' class='btn btn-header btn-vcenter btn-flightclub btn-header-menu btn-composite-xs'>
+					&nbsp;<span>Menu</span>
+				</a>
+			</div>
+		</li>
+	</div>
+	<div class='row hidden-xs hidden-md hidden-lg'>
+		<div class='col-xs-5 hidden-lg hidden-md'>
+			<img src='https://www.flightclub.co.za/img/header/Powered-By-Rosebank-Travel-Small.png' class="header-logo"/>
+		</div>
+		<li class="hidden-md hidden-lg">
+			<div class='pull-right'>
+				<a href='#' data-fc-menu='toggle' class='btn btn-header btn-vcenter btn-flightclub btn-header-menu btn-composite-xs'>
+					&nbsp;<span>Menu</span>
+				</a>
+			</div>
+		</li>
+	</div>
+</div>
+
+<div class="menu-primary" data-fc-menu='menu'>
+	<ul>
+		<li>
+			<span>Menu</span><span class="menu-close" data-fc-menu='close'></span>
+		</li>
+		<li>
+			<a href="https://www.flightclub.co.za/help" class="help">Help</a>
+		</li>
+		<li>
+			<a href="https://www.flightclub.co.za/fly" class="fly">Fly</a>
+		</li>
+		<li>
+			<a href="https://www.flightclub.co.za/sleep" class="sleep">Sleep</a>
+		</li>
+		<li>
+			<a href="https://www.flightclub.co.za/drive" class="drive">Drive</a>
+		</li>
+		<li>
+			<a href="https://www.flightclub.co.za/insure" class="insure">Insure</a>
+		</li>
+				<li class='menu-specials-li'>
+			<a href="https://www.flightclub.co.za/specials" class="specials">Specials</a>
+		</li>
+				<li>
+			<a href="https://www.flightclub.co.za/checkin" class="checkin">Check In</a>
+		</li>
+		<li>
+			<a href="https://www.flightclub.co.za/booking/mybooking" class="yourbooking">Your Booking</a>
+		</li>		
+	</ul>
+</div>		<div class='page-content' style="">
+			
+<body class="about">
+
+<div class="about-wrapper">
+<!-- Section 1 -->
+<section id="top" data-speed="10" data-type="background">
+    <div class="container about-top-content">
+
+    <div class="row">
+		<div class='hidden-xs col-md-4 col-lg-5'></div>
+		<div class='loader-container col-xs-12 col-md-4 col-lg-2'>
+			<div class='loader-header'>
+				<div class='fc-cloud fc-cloud-1'>
+					<div class='fc-cloud-image'></div>
+				</div>
+				<div class='fc-cloud fc-cloud-2'>
+					<div class='fc-cloud-image'></div>
+				</div>
+				<div class='fc-cloud fc-cloud-3'>
+					<div class='fc-cloud-image'></div>
+				</div>
+				<div class='fc-cloud fc-cloud-4'>
+					<div class='fc-cloud-image'></div>
+				</div>
+			</div>
+		</div>
+		<div class="plane"></div>
+		<div class='hidden-xs col-md-4 col-lg-5'></div>
+	</div>
+
+	<div class="row">
+		<div class="fc-about-heading">
+			<div class='hidden-xs col-sm-3 col-md-4 col-lg-4'></div>
+			<div class='col-xs-12 col-sm-6 col-md-4 col-lg-4'>
+				<span class="about-welcome-span">Welcome to</span>
+				<!-- <span class="about-fc-span">Flight</span><span class="about-fc-span-strong">Club</span> -->
+				<img src='https://www.flightclub.co.za/img/header/logo-title-white-crop.png' class="about-fc-title"/>
+			</div>
+			<div class='hidden-xs col-sm-3 col-md-4 col-lg-4'></div>
+		</div>
+	</div>
+        <!--Content goes here!-->
+    </div>
+</section>
+<!-- Section 2 -->
+<section id="middle" data-speed="10" data-type="background">
+    <div class="container">
+    	<div class="row">
+    		<div class='hidden-xs col-sm-2 col-md-3 col-lg-3'></div>
+			<div class='col-xs-12 col-sm-8 col-md-6 col-lg-6'>
+        		<div class="fc-about-block">
+        			<span class="about-whatwedo-span">FAST, FUN &amp; FUSS-FREE</span>
+					<span class="about-betterway-span">A Better Way to Book Online</span>
+        		</div>
+        	</div>
+    		<div class='hidden-xs col-sm-2 col-md-3 col-lg-3'></div>
+        </div> <!--/row-->
+
+    	<div class="row">
+    		<div class='hidden-xs col-sm-4 col-md-2 col-lg-2'></div>
+			<div class='col-xs-12 col-sm-4 col-md-8 col-lg-8'>
+				<div class="fc-about-content-blocks">
+					<div class='col-xs-12 col-sm-12 col-md-4 col-lg-4'>
+						<div class="fc-about-content-blocks-img-container">
+							<div class="fc-about-content-blocks-img-container-height">
+								<div>
+									<img style="max-width: 100%" src='https://www.flightclub.co.za/img/about/innovative.png'/>
+								</div>
+							</div>
+						</div>
+						<span class="fc-about-content-blocks-innovative-title">We Care</span>
+						<div class="fc-about-content-blocks-innovative-desc">We mean that. It&#039;s because of you that we have a business, and we don&#039;t take that for granted. We appreciate having you on the site and using us to book your trip. Because of that, we&rsquo;ll do our best to always make you feel loved ;-) </div>
+					</div>
+	
+					<div class='col-xs-12 col-sm-12 col-md-4 col-lg-4'>
+						<div class="fc-about-content-blocks-img-container">
+							<div class="fc-about-content-blocks-img-container-height">
+								<div>
+									<img style="max-width: 100%" src='https://www.flightclub.co.za/img/about/intuitive.png'/>
+								</div>
+							</div>
+						</div>
+						<span class="fc-about-content-blocks-intuitive-title">It&rsquo;s All About You</span>
+						<div class="fc-about-content-blocks-intuitive-desc">Sure, our technology is ahead of the curve. But what does that mean for you? Our system is designed to save you money, effort and time... which means cheaper, better and faster booking. We are completely committed to making your experience with us amazing..  </div>
+					</div>
+					
+					<div class='col-xs-12 col-sm-12 col-md-4 col-lg-4'>
+						<div class="fc-about-content-blocks-img-container">
+							<div class="fc-about-content-blocks-img-container-height">
+								<div>
+									<img style="max-width: 100%" src='https://www.flightclub.co.za/img/about/user.png'/>
+								</div>
+							</div>
+						</div>
+						<span class="fc-about-content-blocks-usercentric-title">The happy factor </span>
+						<div class="fc-about-content-blocks-usercentric-desc">We can&#039;t stress this enough: your happiness matters to us. In fact, making you smile is priority 1. In addition, our staff are like family - and we make sure they&rsquo;re always content. Why? Because happiness is 100% contagious. Happy staff = happy you.</div>
+					</div>
+
+				</div>
+			</div>
+			<div class='hidden-xs col-sm-4 col-md-2 col-lg-2'></div>
+		</div>
+    </div>
+</section>
+<!-- Section 3 -->
+<section id="quote" data-speed="10" data-type="background">
+    <div class="container">
+    	<div class="row">
+    		<div class='hidden-xs col-sm-2 col-md-2 col-lg-2'></div>
+			<div class='col-xs-12 col-sm-8 col-md-8 col-lg-8'>
+				<div class="fc-about-content-quote">
+        			<blockquote>Innovation distinguishes between a leader and a follower.</blockquote>
+        			<span class="fc-about-content-quote-auth"> -- Steve Jobs -- </span>
+        		</div>
+        	</div>
+        	<div class='hidden-xs col-sm-2 col-md-2 col-lg-2'></div>
+        </div>
+    </div>
+</section>
+<!-- Section 4 -->
+<section id="tweet" data-speed="10" data-type="background">
+    <div class="container">
+    	<div class="row">
+    		<div class='hidden-xs col-sm-4 col-md-4 col-lg-4'></div>
+			<div class='col-xs-12 col-sm-4 col-md-4 col-lg-4'>
+				<div class='special-wrapper'>
+	<div class='widget-twitter'>
+				<div class="widget-twitter-user">
+			<a href='https://twitter.com/FlightClubSA' >
+				<img src='https://www.flightclub.co.za/img/widgets/icon-twitter.png' />
+				@flightclubsa
+			</a>
+		</div>
+		<div class="widget-container">
+			<div class="widget-twitter-tweet">It’s okay to make a mess, experiments can lead to beautiful things. We are finally ready to crush it, bring our A-game. Flightclub is live!</div>
+			<div class="widget-twitter-ago">1 year ago</div>		
+		</div>
+			</div>
+</div>
+        	</div>
+        	<div class='hidden-xs col-sm-4 col-md-4 col-lg-4'></div>
+        </div>
+    </div>
+</section>
+<!-- Section 5 -->
+<section id="bottom" data-speed="10" data-type="background">
+    <div class="container">
+    	<div class="row">
+    		<div class='hidden-xs col-sm-4 col-md-4 col-lg-4'></div>
+			<div class='col-xs-12 col-sm-4 col-md-4 col-lg-4'>
+    		 	<div class="widget widget-newsletter background-primary clearfix" data-maf-container='true'>
+
+	<div class="thanks-img-container-height">
+		<div>
+			<img style="max-width: 100%" src='https://www.flightclub.co.za/img/sample/newsletter-thanks.png'/>
+		</div>
+	</div>
+
+	<img src="https://www.flightclub.co.za/img/sample/newsletter-logo.png" />
+
+	<!-- <div class="widget-newsletter-title">Dream holidays direct to your inbox</div> -->
+	<div class="widget-newsletter-description">Want discounts, love notes, deep thoughts about airports? Get our newsletter. We promise not to spam you.</div>
+	<div class='widget-newsletter-form widget-newsletter-bottom'>
+		<form method="POST" action="https://www.flightclub.co.za/newsletter-register" accept-charset="UTF-8" data-maf="1"><input name="_token" type="hidden" value="SFYJdnfP7VKArWOsNiVTWivk94cwAmTlEhnUblCn">
+		<div class="form-group">
+			<input type="hidden" name="form" />		
+		</div>
+		<div class="form-group">
+			<div class="help-block"></div>
+			<div class="input-group">
+				<input type="text" name="email" class="form-control" placeholder="Enter email address">
+				<span class="input-group-btn">
+					<input type="submit" value="Go" class="btn btn-cta" />
+				</span>
+			</div>
+		</div>	
+		</form>
+	</div>
+	<div><span class='search-loader-newsletter-span'> This won't interfere with your search. </span></div>
+</div>
+
+
+
+    		</div>
+    		<div class='hidden-xs col-sm-4 col-md-4 col-lg-4'></div>
+    	</div>
+    </div>
+</section>
+
+</div>
+		</div>
+		<div class='navbar navbar-default fc-navbar-footer'>
+	<div class="container-fluid">
+		<div class="navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="https://www.flightclub.co.za/about" class='about'>About Us</a>
+				</li>
+				<li class="dropdown">					
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						Why Trust Us?
+					</a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="https://www.flightclub.co.za/static/terms">Terms &amp; Conditions</a></li>
+						<li><a href="https://www.flightclub.co.za/static/policy">Privacy Policy</a></li>
+					</ul>
+				</li>
+				<li class="dropdown dropdown-fc-contactus">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+						Get in Touch
+					</a>
+					<ul class="dropdown-menu" role="menu">
+						<li>
+							<div><span>+27 11 880 5954</span></div>							
+						</li>
+						<li>
+							<a class='btn btn-block btn-primary drop-line-btn' href='mailto:help@flightclub.co.za'>OR DROP US A LINE</a>						</li>
+						<li><a href="https://www.flightclub.co.za/contact">All Contacts</a></li>
+					</ul>
+				</li>
+				<li class='split-nav'>
+					<div class='fc-share navbar-text clearfix'>
+						<span class=''>Share Us</span>
+						<div class='fc-share-options'>
+							<span class='fc-share-icon fc-share-icon-options' data-fc-shareslide='toggle'></span>
+						</div><!-- necessary comment to avoid whitespace
+						--><div class='fc-share-options fc-share-expanded clearfix' data-fc-shareslide='container'>
+							
+							<a href="http://www.facebook.com/sharer/sharer.php?u=https://www.flightclub.co.za&title=Flight Club" target="_blank" class='fc-share-icon fc-share-icon-facebook'></a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav">
+				<li>
+					<div class="fc-share navbar-text clearfix">
+						<span class='fc-phone-icon'></span>
+						<span class=''>+27 11 880 5954</span>
+					</div>
+				</li>
+				<li>
+					<div class="fc-share navbar-text navbar-text-copy">
+						<span class=''>&copy; FlightClub 2018</span>
+					</div>
+				</li>
+				<li>
+					<div class="fc-logo navbar-text">
+						<img src='https://www.flightclub.co.za/img/logos/visa.svg' width='40px' />
+						<img src='https://www.flightclub.co.za/img/logos/mastercard.svg' width='40px' />
+						<img src='https://www.flightclub.co.za/img/logos/diners.svg' width='40px' />
+						<img src='https://www.flightclub.co.za/img/logos/amex.svg' width='40px' />
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>		<!-- primary libraries -->
+		
+		<script type="text/javascript" src="https://www.flightclub.co.za/plugins/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="https://www.flightclub.co.za/plugins/bootstrap/js/bootstrap.min.js"></script>
+		
+		<!-- important methys plugins -->
+		<script type="text/javascript" src="https://www.flightclub.co.za/js/methys.logger.js"></script>
+		<script type="text/javascript" src="https://www.flightclub.co.za/js/methys.events.js"></script>
+
+		<!-- widget plugins -->
+
+		<!-- custom plugins -->
+
+		<script type="text/javascript" src="https://www.flightclub.co.za/js/flightclub.menu.js"></script>
+		<script type="text/javascript" src="https://www.flightclub.co.za/js/flightclub.special.js"></script>
+
+		<!-- helper rendered JS scripts -->
+								<script type='text/javascript' src='https://www.flightclub.co.za/js/methys.ajaxforms.js'></script>
+<script type='text/javascript' src='https://www.flightclub.co.za/plugins/moment/moment.js'></script>
+<script type='text/javascript' src='https://www.flightclub.co.za/plugins/bootstrap-select/js/bootstrap-select.js'></script>
+<script type='text/javascript' src='https://www.flightclub.co.za/js/flightclub.common.js'></script>
+<script type='text/javascript' src='https://www.flightclub.co.za/js/flightclub.inactivity.js'></script>
+
+		<!-- page specific scripts -->
+		
+		
+		<div class='loader-overlay' data-loader='imminent' >
+	<div class='hidden-xs col-sm-3 col-md-4 col-lg-4'></div>
+	<div class='loader-container col-xs-12 col-sm-6 col-md-4 col-lg-4'>
+		<div class='loader-header'>
+			<div class='fc-cloud fc-cloud-1'>
+				<div class='fc-cloud-image'></div>
+			</div>
+			<div class='fc-cloud fc-cloud-2'>
+				<div class='fc-cloud-image'></div>
+			</div>
+			<div class='fc-cloud fc-cloud-3'>
+				<div class='fc-cloud-image'></div>
+			</div>
+			<div class='fc-cloud fc-cloud-4'>
+				<div class='fc-cloud-image'></div>
+			</div>
+
+			<div class='loader-spacer'></div>
+			<div class='loader-title'></div>
+		</div>
+		<div class='loader-content loader-content-transparent'>
+			<div class='loader-subtitle'>We don't allow bookings <br/>within 24hrs</div>
+			<p>We do this for your protection, please <a href='mailto:help@flightclub.co.za'>contact</a> our agents and they will assist you.</p>
+			
+			<div class='col-xs-2 col-sm-2 hidden-md col-lg-2'></div>
+			<div class='loader-group col-xs-10 col-sm-8 col-md-12 col-lg-8'>
+				<div class="fc-contact-phone">
+	<span class="fc-contact-phone-icon"></span>
+	<span>+27 11 880 5954</span>
+</div>				<div class='btn btn-primary' data-fcloader-action='close'>Back</div>
+			</div>
+			<div class='col-xs-2 col-sm-2 hidden-md col-lg-2'></div>
+		</div>
+	</div>
+	<div class='hidden-xs col-sm-3 col-md-4 col-lg-4'></div>
+</div>
+		<div id='show-inactive' style='display:none'>	
+			<div class='loader-overlay loader-visible'>
+	<div class='hidden-xs col-sm-3 col-md-4 col-lg-4'></div>
+	<div class='loader-container col-xs-12 col-sm-6 col-md-4 col-lg-4'>
+		<div class='loader-header'>
+			<div class='fc-cloud fc-cloud-1'>
+				<div class='fc-cloud-image'></div>
+			</div>
+			<div class='fc-cloud fc-cloud-2'>
+				<div class='fc-cloud-image'></div>
+			</div>
+			<div class='fc-cloud fc-cloud-3'>
+				<div class='fc-cloud-image'></div>
+			</div>
+			<div class='fc-cloud fc-cloud-4'>
+				<div class='fc-cloud-image'></div>
+			</div>
+			<div class="plane"></div>
+			<div class='loader-spacer'></div>
+			<div class='loader-title'>Where did you go?</div>
+		</div>
+		<div class='loader-content loader-content-transparent'>
+			<div class='loader-subtitle'>The page has been inactive for 30 minutes</div>
+			<div class='btn btn-primary' data-fcinactivity-action='close'>CONTINUE</div>
+		</div>
+	</div>
+	<div class='hidden-xs col-sm-3 col-md-4 col-lg-4'></div>
+</div>		</div>
+
+	</body>
+</html>
